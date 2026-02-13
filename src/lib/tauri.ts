@@ -12,4 +12,4 @@ export {
   type CommandReturn,
   type CommandArgs,
   type CommandReturns,
-} from "@/core/ipc";
+} from '@/core/ipc';

@@ -23,11 +23,11 @@ export interface SetSettingsInput {
 }
 
 export const COMMAND_NAMES = [
-  "ping",
-  "get_app_info",
-  "get_settings",
-  "set_settings",
-  "update_tray_title",
+  'ping',
+  'get_app_info',
+  'get_settings',
+  'set_settings',
+  'update_tray_title',
 ] as const;
 
 export interface CommandArgs {

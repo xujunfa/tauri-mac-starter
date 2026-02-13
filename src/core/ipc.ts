@@ -5,9 +5,9 @@
  * Maps command names to their argument and return types.
  */
 
-import { invoke } from "@tauri-apps/api/core";
-import type { CommandArgs, CommandReturns } from "./ipc.generated";
-export type { CommandArgs, CommandReturns } from "./ipc.generated";
+import { invoke } from '@tauri-apps/api/core';
+import type { CommandArgs, CommandReturns } from './ipc.generated';
+export type { CommandArgs, CommandReturns } from './ipc.generated';
 
 export type CommandName = keyof CommandArgs;
 export type CommandArg<C extends CommandName> = CommandArgs[C];

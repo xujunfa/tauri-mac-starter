@@ -1,8 +1,8 @@
 mod commands;
 mod db;
 
-use tauri::Manager;
 use tauri::tray::TrayIconBuilder;
+use tauri::Manager;
 use tauri_plugin_global_shortcut::{Code, GlobalShortcutExt, Modifiers, Shortcut, ShortcutState};
 
 #[tauri::command]
@@ -52,7 +52,10 @@ pub fn run() {
                 .build()
         })
         .setup(|app| {
-            let app_data_dir = app.path().app_data_dir().expect("failed to get app data dir");
+            let app_data_dir = app
+                .path()
+                .app_data_dir()
+                .expect("failed to get app data dir");
             std::fs::create_dir_all(&app_data_dir).ok();
             let db_path = app_data_dir.join("starter.db");
             let db_path_str = db_path.to_string_lossy().to_string();
@@ -88,10 +91,16 @@ pub fn run() {
                 .build(app)?;
 
             app.global_shortcut()
-                .register(Shortcut::new(Some(Modifiers::SUPER | Modifiers::SHIFT), Code::KeyO))
+                .register(Shortcut::new(
+                    Some(Modifiers::SUPER | Modifiers::SHIFT),
+                    Code::KeyO,
+                ))
                 .expect("failed to register Cmd+Shift+O");
             app.global_shortcut()
-                .register(Shortcut::new(Some(Modifiers::SUPER | Modifiers::SHIFT), Code::KeyL))
+                .register(Shortcut::new(
+                    Some(Modifiers::SUPER | Modifiers::SHIFT),
+                    Code::KeyL,
+                ))
                 .expect("failed to register Cmd+Shift+L");
 
             Ok(())

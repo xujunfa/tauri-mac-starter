@@ -102,7 +102,9 @@ pnpm gen:ipc:check
 pnpm gen:ipc:check
 pnpm -s tsc -b --pretty false
 pnpm test
-cargo test --manifest-path src-tauri/Cargo.toml
+pnpm fmt:rust:check
+pnpm lint:rust
+pnpm test:rust
 ```
 
 ## Current Runtime Defaults

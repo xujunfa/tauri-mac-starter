@@ -1,1 +1,1 @@
-export { ping, getAppInfo } from "./api";
+export { ping, getAppInfo } from './api';

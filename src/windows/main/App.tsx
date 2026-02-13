@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { getAppInfo } from "@/modules/app";
-import { getSettings } from "@/modules/settings";
+import { useEffect, useState } from 'react';
+import { getAppInfo } from '@/modules/app';
+import { getSettings } from '@/modules/settings';
 
 type AppInfo = Awaited<ReturnType<typeof getAppInfo>>;
 type Settings = Awaited<ReturnType<typeof getSettings>>;
@@ -50,28 +50,28 @@ function App() {
             </h2>
             <dl className="mt-3 space-y-1 text-sm text-slate-600">
               <div>
-                <dt className="inline font-medium text-slate-800">App:</dt>{" "}
-                <dd className="inline">{appInfo?.name ?? "-"}</dd>
+                <dt className="inline font-medium text-slate-800">App:</dt>{' '}
+                <dd className="inline">{appInfo?.name ?? '-'}</dd>
               </div>
               <div>
-                <dt className="inline font-medium text-slate-800">Version:</dt>{" "}
-                <dd className="inline">{appInfo?.version ?? "-"}</dd>
+                <dt className="inline font-medium text-slate-800">Version:</dt>{' '}
+                <dd className="inline">{appInfo?.version ?? '-'}</dd>
               </div>
               <div>
-                <dt className="inline font-medium text-slate-800">Locale:</dt>{" "}
-                <dd className="inline">{settings?.locale ?? "-"}</dd>
+                <dt className="inline font-medium text-slate-800">Locale:</dt>{' '}
+                <dd className="inline">{settings?.locale ?? '-'}</dd>
               </div>
               <div>
-                <dt className="inline font-medium text-slate-800">Theme:</dt>{" "}
-                <dd className="inline">{settings?.theme ?? "-"}</dd>
+                <dt className="inline font-medium text-slate-800">Theme:</dt>{' '}
+                <dd className="inline">{settings?.theme ?? '-'}</dd>
               </div>
             </dl>
           </article>
         </section>
 
         <section className="rounded-2xl border border-dashed border-slate-300 bg-emerald-50/50 p-4 text-sm text-slate-700">
-          Next step: add your own domain commands in Rust, run{" "}
-          <code>pnpm gen:ipc</code>, and consume them from{" "}
+          Next step: add your own domain commands in Rust, run{' '}
+          <code>pnpm gen:ipc</code>, and consume them from{' '}
           <code>typedInvoke</code>-based modules.
         </section>
       </main>

@@ -1,9 +1,9 @@
-import { typedInvoke } from "@/lib/tauri";
+import { typedInvoke } from '@/lib/tauri';
 
 export function ping() {
-  return typedInvoke("ping", {});
+  return typedInvoke('ping', {});
 }
 
 export function getAppInfo() {
-  return typedInvoke("get_app_info", {});
+  return typedInvoke('get_app_info', {});
 }
