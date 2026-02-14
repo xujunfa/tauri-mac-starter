@@ -12,8 +12,8 @@
   - `typedInvoke` + 自动生成契约。
 - 前端模块层：`src/modules/app/*` + `src/modules/settings/*`
   - 封装模板命令调用。
-- UI 层：`src/windows/main/App.tsx` + `src/windows/timer/App.tsx`
-  - 中性首页 + timer 占位页。
+- UI 层：`src/windows/main/App.tsx` + `src/windows/overlay/App.tsx`
+  - 中性首页 + overlay 占位页。
 
 ## 何时更新本文件
 

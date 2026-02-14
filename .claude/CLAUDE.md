@@ -7,14 +7,14 @@ Tauri v2 + React + TypeScript 的 macOS 桌面模板仓库（业务中立）。
 - 提供可直接扩展的模板骨架，不包含 area/project/task/pomodoro 业务域。
 - 当前 UI：
   - Main Window：模板首页（`src/windows/main/App.tsx`）
-  - Timer Window：占位浮窗（`src/windows/timer/App.tsx`）
+  - Overlay Window：占位浮窗（`src/windows/overlay/App.tsx`）
 
 ## 当前系统真相
 
 - Dev 端口：`1430`（HMR `1431`）
 - Tauri `devUrl`：`http://localhost:1430`
 - 快捷键：
-  - `Cmd+Shift+O`：切换 timer
+  - `Cmd+Shift+O`：切换 overlay
   - `Cmd+Shift+L`：切换 main
 - SQLite：`starter.db`
 - Identifier：`com.tauri-mac-starter.app`

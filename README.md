@@ -7,7 +7,7 @@ A production-ready macOS desktop app starter built with Tauri v2 + React + TypeS
 ## What You Get
 
 - Tauri v2 Rust backend + React frontend
-- Multi-window app structure (`main` + `timer`)
+- Multi-window app structure (`main` + `overlay`)
 - Tray support + global shortcuts
 - SQLite integration (`starter.db`)
 - Type-safe IPC workflow (`Rust command -> generated TS types -> typedInvoke`)
@@ -69,7 +69,7 @@ Update these files before feature work:
 ```text
 src/
   windows/main/           Main window UI
-  windows/timer/          Timer/floating window UI
+  windows/overlay/        Overlay/floating window UI
   modules/app/            Frontend API wrappers for app commands
   modules/settings/       Frontend API wrappers for settings commands
   core/ipc.ts             typedInvoke wrapper
@@ -113,7 +113,7 @@ pnpm test:rust
 - HMR port: `1431`
 - Tauri dev URL: `http://localhost:1430`
 - Shortcuts:
-  - `Cmd+Shift+O`: toggle timer window
+  - `Cmd+Shift+O`: toggle overlay window
   - `Cmd+Shift+L`: toggle main window
 - Database file: `starter.db`
 - Identifier: `com.tauri-mac-starter.app`

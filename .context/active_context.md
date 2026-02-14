@@ -3,7 +3,7 @@
 ## 当前状态（更新于 2026-02-13）
 
 - Phase 1 已完成：模板命令链 `ping/get_app_info/get_settings/set_settings` 已可用。
-- Phase 2 已完成：主窗口中性化、timer 占位化、快捷键改为窗口切换语义。
+- Phase 2 已完成：主窗口中性化、overlay 占位化、快捷键改为窗口切换语义。
 - Phase 3 已完成：业务域命令与业务表已移除，DB 切换为 `starter.db`。
 - 当前分支代码可通过最小验收命令组（IPC/TS/Test/Cargo test）。
 

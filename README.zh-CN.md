@@ -7,7 +7,7 @@
 ## 模板能力
 
 - Tauri v2 Rust 后端 + React 前端
-- 多窗口结构（`main` + `timer`）
+- 多窗口结构（`main` + `overlay`）
 - Tray 支持 + 全局快捷键
 - SQLite 集成（`starter.db`）
 - 类型安全 IPC 工作流（`Rust command -> 生成 TS 类型 -> typedInvoke`）
@@ -67,7 +67,7 @@ pnpm tauri dev
 ```text
 src/
   windows/main/            主窗口 UI
-  windows/timer/           浮窗/Timer UI
+  windows/overlay/         浮窗/Overlay UI
   modules/app/             app 命令前端封装
   modules/settings/        settings 命令前端封装
   core/ipc.ts              typedInvoke 封装
@@ -111,7 +111,7 @@ pnpm test:rust
 - HMR 端口：`1431`
 - Tauri dev URL：`http://localhost:1430`
 - 全局快捷键：
-  - `Cmd+Shift+O`：切换 timer 窗口
+  - `Cmd+Shift+O`：切换 overlay 窗口
   - `Cmd+Shift+L`：切换 main 窗口
 - 数据库文件：`starter.db`
 - 应用 identifier：`com.tauri-mac-starter.app`
