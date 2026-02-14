@@ -5,7 +5,7 @@
   "identifier": "com.tauri-mac-starter.app",
   "build": {
     "frontendDist": "../dist",
-    "devUrl": "http://localhost:1430",
+    "devUrl": "http://localhost:1450",
     "beforeDevCommand": "pnpm dev",
     "beforeBuildCommand": "pnpm build"
   },
@@ -14,8 +14,8 @@
     "macOSPrivateApi": true,
     "windows": [
       {
-        "label": "timer",
-        "title": "tauri-mac-starter Timer",
+        "label": "overlay",
+        "title": "tauri-mac-starter Overlay",
         "url": "/index.html",
         "width": 270,
         "height": 340,
@@ -24,7 +24,7 @@
         "alwaysOnTop": true,
         "visibleOnAllWorkspaces": true,
         "resizable": false,
-        "visible": true
+        "visible": false
       },
       {
         "label": "main",

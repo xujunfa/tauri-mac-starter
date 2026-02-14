@@ -9,7 +9,7 @@ function App() {
           <p className="text-xs uppercase tracking-[0.2em] text-emerald-200">
             tauri-mac-starter
           </p>
-          <h1 className="text-lg font-semibold">Timer Placeholder</h1>
+          <h1 className="text-lg font-semibold">Overlay Placeholder</h1>
           <p className="text-sm text-emerald-100/80">
             This floating window is reserved for your custom productivity flow.
           </p>

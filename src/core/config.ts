@@ -6,10 +6,10 @@ export const TEMPLATE_INFO = {
 
 export const DEFAULT_WINDOW_LABELS = {
   main: 'main',
-  timer: 'timer',
+  overlay: 'overlay',
 } as const;
 
 export const DEFAULT_SHORTCUTS = {
-  toggleTimer: 'Cmd+Shift+O',
+  toggleOverlay: 'Cmd+Shift+O',
   toggleMain: 'Cmd+Shift+L',
 } as const;

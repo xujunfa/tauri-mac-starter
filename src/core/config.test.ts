@@ -14,11 +14,11 @@ describe('template config', () => {
 
   it('defines default window labels', () => {
     expect(DEFAULT_WINDOW_LABELS.main).toBe('main');
-    expect(DEFAULT_WINDOW_LABELS.timer).toBe('timer');
+    expect(DEFAULT_WINDOW_LABELS.overlay).toBe('overlay');
   });
 
   it('defines default shortcuts', () => {
-    expect(DEFAULT_SHORTCUTS.toggleTimer).toBe('Cmd+Shift+O');
+    expect(DEFAULT_SHORTCUTS.toggleOverlay).toBe('Cmd+Shift+O');
     expect(DEFAULT_SHORTCUTS.toggleMain).toBe('Cmd+Shift+L');
   });
 });

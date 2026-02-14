@@ -22,15 +22,15 @@ pub fn run() {
         )
         .plugin(tauri_plugin_notification::init())
         .plugin({
-            let toggle_timer = Shortcut::new(Some(Modifiers::SUPER | Modifiers::SHIFT), Code::KeyO);
+            let toggle_overlay = Shortcut::new(Some(Modifiers::SUPER | Modifiers::SHIFT), Code::KeyO);
             let toggle_main = Shortcut::new(Some(Modifiers::SUPER | Modifiers::SHIFT), Code::KeyL);
             tauri_plugin_global_shortcut::Builder::new()
                 .with_handler(move |app, shortcut, event| {
                     if event.state != ShortcutState::Pressed {
                         return;
                     }
-                    if shortcut == &toggle_timer {
-                        if let Some(w) = app.get_webview_window("timer") {
+                    if shortcut == &toggle_overlay {
+                        if let Some(w) = app.get_webview_window("overlay") {
                             if w.is_visible().unwrap_or(false) {
                                 let _ = w.hide();
                             } else {
